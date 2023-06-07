@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="View.LibraryManagementUser">
+  <grid id="27dc6" binding="LibraryManagementUserPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="633" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-8421744"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="e276a" binding="tabbedTablePane1">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-4473925"/>
+          <font name="Times New Roman" size="20" style="1"/>
+          <foreground color="-12236470"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="911be" binding="tablePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <tabbedpane title="Books"/>
+            </constraints>
+            <properties>
+              <background color="-11713971"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <scrollpane id="d7624" binding="tableScrollPanel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-4473925"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="d8439" class="javax.swing.JTable" binding="userJtable" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <selectionBackground color="-4473925"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <grid id="efc7f" binding="searchPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="10" bottom="10" right="10"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-11713971"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e8fe3" class="javax.swing.JButton" binding="backButton">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4473925"/>
+              <font name="Tahoma" size="18" style="1"/>
+              <text value="Back"/>
+            </properties>
+          </component>
+          <component id="10796" class="javax.swing.JTextField" binding="searchTextField">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+            </properties>
+          </component>
+          <component id="d0ea7" class="javax.swing.JButton" binding="searchButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-4473925"/>
+              <font name="Tahoma" size="18" style="1"/>
+              <text value="Search"/>
+            </properties>
+          </component>
+          <component id="a9093" class="javax.swing.JLabel" binding="userNameLabel">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-2895922"/>
+              <font name="Times New Roman" size="20" style="1"/>
+              <foreground color="-1"/>
+              <text value="User Name"/>
+            </properties>
+          </component>
+          <component id="cd881" class="javax.swing.JLabel" binding="welcome">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12828863"/>
+              <font name="Times New Roman" size="20" style="1"/>
+              <foreground color="-2895922"/>
+              <text value="Welcome"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="4f1c5">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
